@@ -66,10 +66,14 @@
     "phoneInvalid": "Введите корректный номер телефона Беларуси",
     "addressPlaceholder": "Адрес",
     "addressRequired": "Адрес обязателен",
+    "selectDate": "Выберите дату",
     "dateRequired": "Дата обязательна",
     "applianceRequired": "Выберите хотя бы одну технику",
     "selectAppliancePlaceholder": "Выберите типы техники...",
     "sending": "Отправка...",
-    "scheduleBooking": "Записаться"
+    "scheduleBooking": "Записаться",
+    "thankYouTitle": "Спасибо!",
+    "thankYouMessage": "Ваш запрос успешно отправлен. Мы скоро с вами свяжемся.",
+    "sendAnother": "Отправить ещё один запрос"
   }
 }

@@ -1,61 +1,26 @@
-import React from 'react';
-import { useForm, Controller } from 'react-hook-form';
+import React, {useState} from 'react';
+import {Controller, useForm} from 'react-hook-form';
 import Select from 'react-select';
 import axios from 'axios';
-import { useTranslation } from 'react-i18next';
-import DatePicker, { registerLocale } from 'react-datepicker';
+import {useTranslation} from 'react-i18next';
+import DatePicker, {registerLocale} from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { enUS, ru } from 'date-fns/locale';
-import { applianceData } from '../../common/utility.js';
+import {enUS, ru} from 'date-fns/locale';
+import {applianceData, customSelectStyles} from '../../common/utility.js';
 import {useAuth} from "../../context/AuthContext.jsx";
+import dayjs from 'dayjs';
 
-// Регистрируем локали для react-datepicker
 registerLocale('en', enUS);
 registerLocale('ru', ru);
-
-const customSelectStyles = {
-    control: (base, state) => ({
-        ...base,
-        backgroundColor: 'white',
-        color: 'black',
-        borderRadius: '0.375rem',
-        padding: '2px',
-        borderColor: state.isFocused ? '#f97316' : '#d1d5db',
-        boxShadow: state.isFocused ? '0 0 0 1px #f97316' : 'none',
-        '&:hover': { borderColor: '#f97316' }
-    }),
-    menu: (base) => ({
-        ...base,
-        zIndex: 10,
-        backgroundColor: 'white',
-        color: 'black'
-    }),
-    option: (base, state) => ({
-        ...base,
-        backgroundColor: state.isSelected ? '#f97316' : state.isFocused ? '#fde68a' : 'white',
-        color: state.isSelected ? 'white' : state.isFocused ? '#111827' : 'black',
-        cursor: 'pointer',
-        '&:active': { backgroundColor: '#fb923c' }
-    }),
-    multiValue: (base) => ({ ...base, backgroundColor: '#f97316', color: 'white' }),
-    multiValueLabel: (base) => ({ ...base, color: 'white' }),
-    multiValueRemove: (base) => ({
-        ...base,
-        color: 'white',
-        ':hover': { backgroundColor: '#c2410c', color: 'white' }
-    }),
-    placeholder: (base) => ({ ...base, color: '#6b7280' }),
-    input: (base) => ({ ...base, color: 'black' })
-};
 
 const phonePattern = /^(\+375|80)(29|25|44|33)\d{7}$/;
 
 const BookingForm = () => {
-    const { t } = useTranslation();
-    const { locale } = useAuth();
+    const {t} = useTranslation();
+    const {locale} = useAuth();
+    const [isSubmitted, setIsSubmitted] = useState(false);
 
-    // Формируем опции для селекта с переводом
-    const applianceOptions = applianceData.map(({ key, value }) => ({
+    const applianceOptions = applianceData.map(({key, value}) => ({
         label: t(`equipment.${key}`),
         value,
     }));
@@ -65,14 +30,16 @@ const BookingForm = () => {
         handleSubmit,
         control,
         reset,
-        formState: { errors, isValid, isSubmitting }
+        setError,
+        clearErrors,
+        formState: {errors, isValid, isSubmitting}
     } = useForm({
-        mode: 'onBlur',
+        mode: 'all',
         defaultValues: {
             name: '',
             phone: '',
             address: '',
-            date: null,       // Date объект для react-datepicker
+            date: null,
             appliances: []
         }
     });
@@ -84,23 +51,25 @@ const BookingForm = () => {
             ? data.date.toLocaleDateString(locale === 'ru' ? 'ru-RU' : 'en-US')
             : '';
 
+        const now = dayjs().format('DD.MM.YYYY HH:mm:ss');  // Текущие дата и время
+
         const message = `
-🛠 <b>New Repair Request</b>\n
-👤 Name: ${data.name}
-📞 Phone: ${data.phone}
-🏠 Address: ${data.address}
-📅 Date: ${formattedDate}
-🔧 Services: ${selectedServices}
+🛠 <b>Новый запрос на ремонт — ${now}</b>\n
+👤 Имя: ${data.name}
+📞 Телефон: ${data.phone}
+🏠 Адрес: ${data.address}
+📅 Дата: ${formattedDate}
+🔧 Виды техники: ${selectedServices}
         `;
 
         try {
-            await axios.post(`https://api.telegram.org/bot<YOUR_BOT_TOKEN>/sendMessage`, {
-                chat_id: '<YOUR_CHAT_ID>',
+            await axios.post(`https://api.telegram.org/bot${import.meta.env.VITE_TELEGRAM_BOT_TOKEN}/sendMessage`, {
+                chat_id: import.meta.env.VITE_TELEGRAM_CHAT_ID,
                 text: message,
                 parse_mode: 'HTML'
             });
 
-            alert(t('form.messageSent') || 'Message sent to Telegram!');
+            setIsSubmitted(true);
             reset();
         } catch (error) {
             console.error('Telegram error:', error);
@@ -108,8 +77,17 @@ const BookingForm = () => {
         }
     };
 
+    if (isSubmitted) {
+        return (
+            <div className="bg-[#0c0c1f] p-5 rounded shadow-md w-full max-w-md mt-10 md:mt-0 text-white text-center">
+                <h2 className="text-2xl font-bold mb-4">{t('form.thankYouTitle') || 'Thank you!'}</h2>
+                <p>{t('form.thankYouMessage') || 'Your request has been sent successfully. We will contact you soon.'}</p>
+            </div>
+        );
+    }
+
     return (
-        <div className="bg-[#0c0c1f] p-8 rounded shadow-md w-full max-w-md mt-10 md:mt-0 text-white">
+        <div className="bg-[#0c0c1f] p-5 rounded shadow-md w-full max-w-md mt-10 md:mt-0 text-white">
             <h2 className="text-2xl text-center font-bold mb-2">{t('form.title') || 'Request Your Services'}</h2>
             <p className="text-center py-3">{t("form.desc")}</p>
 
@@ -118,7 +96,7 @@ const BookingForm = () => {
                     className="w-full p-2 rounded bg-white text-black focus:outline-none"
                     type="text"
                     placeholder={t("form.namePlaceholder", "Your Name")}
-                    {...register('name', { required: t("form.nameRequired", 'Name is required') })}
+                    {...register('name', {required: t("form.nameRequired", 'Name is required')})}
                 />
                 {errors.name && <p className="text-red-400 text-sm">{errors.name.message}</p>}
 
@@ -128,7 +106,10 @@ const BookingForm = () => {
                     placeholder={t("form.phonePlaceholder", "Phone")}
                     {...register('phone', {
                         required: t("form.phoneRequired", 'Phone is required'),
-                        pattern: { value: phonePattern, message: t("form.phoneInvalid", 'Enter a valid Belarusian phone number') }
+                        pattern: {
+                            value: phonePattern,
+                            message: t("form.phoneInvalid", 'Enter a valid Belarusian phone number')
+                        }
                     })}
                 />
                 {errors.phone && <p className="text-red-400 text-sm">{errors.phone.message}</p>}
@@ -137,7 +118,7 @@ const BookingForm = () => {
                     className="w-full p-2 rounded bg-white text-black focus:outline-none"
                     type="text"
                     placeholder={t("form.addressPlaceholder", "Address")}
-                    {...register('address', { required: t("form.addressRequired", 'Address is required') })}
+                    {...register('address', {required: t("form.addressRequired", 'Address is required')})}
                 />
                 {errors.address && <p className="text-red-400 text-sm">{errors.address.message}</p>}
 
@@ -145,22 +126,22 @@ const BookingForm = () => {
                 <Controller
                     control={control}
                     name="date"
-                    rules={{ required: t("form.dateRequired", 'Date is required') }}
-                    render={({ field }) => (
+                    rules={{required: t("form.dateRequired", 'Date is required')}}
+                    render={({field}) => (
                         <DatePicker
-                            placeholderText={t("form.datePlaceholder", "Select a date")}
+                            placeholderText={t("form.selectDate", "Select a date")}
                             selected={field.value}
                             onChange={field.onChange}
                             minDate={new Date()}
+                            onBlur={field.onBlur}
                             locale={locale === 'ru' ? 'ru' : 'en'}
                             dateFormat={locale === 'ru' ? 'dd.MM.yyyy' : 'MM/dd/yyyy'}
-                            wrapperClassName="w-full" // ✅ Обёртка на всю ширину
+                            wrapperClassName="w-full"
                             className="w-full p-2 rounded bg-white text-black focus:outline-none"
                             autoComplete="off"
                         />
                     )}
                 />
-
                 {errors.date && <p className="text-red-400 text-sm">{errors.date.message}</p>}
 
                 {/* Селект с мультивыбором */}
@@ -170,13 +151,32 @@ const BookingForm = () => {
                     rules={{
                         validate: (value) => (value && value.length > 0) || t("form.applianceRequired", 'Select at least one service')
                     }}
-                    render={({ field }) => (
+                    render={({field, fieldState}) => (
                         <Select
                             {...field}
                             options={applianceOptions}
                             isMulti
                             styles={customSelectStyles}
+                            value={field.value || []}
                             placeholder={t("form.selectAppliancePlaceholder", "Select appliance types...")}
+                            onChange={(selected) => {
+                                field.onChange(selected);
+                                // При выборе снимаем ошибку
+                                if (fieldState.invalid) {
+                                    clearErrors('appliances');
+                                }
+                            }}
+                            onBlur={() => {
+                                // При потере фокуса проверяем валидацию
+                                if (!field.value || field.value.length === 0) {
+                                    setError('appliances', {
+                                        type: 'manual',
+                                        message: t("form.applianceRequired", 'Select at least one service'),
+                                    });
+                                } else {
+                                    clearErrors('appliances');
+                                }
+                            }}
                         />
                     )}
                 />
