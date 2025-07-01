@@ -77,7 +77,7 @@ export const BringToLife = () => {
 
                     {/* CTA Section */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-12 space-y-4 sm:space-y-0">
-                        <button className="bg-[#ff5823] text-white font-semibold px-6 py-3 rounded-md shadow hover:bg-[#e64a17] transition">
+                        <button className="bg-[#ff5823] text-white font-semibold px-6 py-3 shadow hover:bg-[#e64a17] transition">
                             {t("bringToLife.bookBtn")}
                         </button>
                         <a

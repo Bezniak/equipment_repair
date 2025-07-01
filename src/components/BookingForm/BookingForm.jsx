@@ -6,9 +6,10 @@ import {useTranslation} from 'react-i18next';
 import DatePicker, {registerLocale} from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import {enUS, ru} from 'date-fns/locale';
-import {applianceData, customSelectStyles} from '../../common/utility.js';
+import {customSelectStyles} from '../../common/utility.js';
 import {useAuth} from "../../context/AuthContext.jsx";
 import dayjs from 'dayjs';
+import {applianceData} from "../../store/data.js";
 
 registerLocale('en', enUS);
 registerLocale('ru', ru);
