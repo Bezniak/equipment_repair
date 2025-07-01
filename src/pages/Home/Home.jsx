@@ -5,6 +5,7 @@ import {OurService} from "../../components/OurService/OurService.jsx";
 import ApplianceRepairSection from "../../components/ApplianceRepairSection/ApplianceRepairSection.jsx";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs.jsx";
 import FeaturedProjects from "../../components/FeaturedProjects/FeaturedProjects.jsx";
+import {Conclusion} from "../../components/Conclusion/Conclusion.jsx";
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
                 <ApplianceRepairSection/>
                 <WhyChooseUs/>
                 <FeaturedProjects/>
+                <Conclusion/>
 
             </main>
         </>

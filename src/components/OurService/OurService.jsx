@@ -18,13 +18,17 @@ export const OurService = () => {
         'microwaveRepair',
         'kettleRepair',
         'acRepair',
+        'riceRepair',
+        'vacuumRepair',
+        'toasterRepair',
+        'blenderRepair'
     ];
 
     return (
         <section className='py-10 md:py-20'>
             {/* Header */}
             <div className='container mx-auto text-center border-b-2 border-gray-300 pb-10'>
-                <span className='inline-block mb-5 py-2 px-5 bg-yellow-400 text-black font-medium'>
+                <span className='inline-block mb-5 py-2 px-5 bg-[#ffc752] text-black font-medium'>
                   {t('ourServices.ourServices')}
                 </span>
                 <h1 className='text-3xl mb-5 font-bold'>

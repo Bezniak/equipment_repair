@@ -4,10 +4,11 @@ import { FaShieldAlt, FaUsers, FaCogs, FaCalendarAlt, FaPhoneAlt } from 'react-i
 
 export const BringToLife = () => {
     const { t } = useTranslation();
+    const year = new Date().getFullYear();
 
     return (
-        <section className="bg-[#f0effa] py-16 px-4 md:px-12">
-            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <section className="py-16 px-4 md:px-12">
+            <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Left content */}
                 <div>
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -19,12 +20,11 @@ export const BringToLife = () => {
                     <img
                         src="/bringToLife.jpg"
                         alt="ремонт бытовой техники"
-                        className="rounded-xl shadow-md"
                     />
                 </div>
 
                 {/* Right content (features) */}
-                <div className="bg-[#f9f5f2] rounded-xl p-8 shadow-md">
+                <div className="rounded-xl p-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
                         <div className="flex items-start space-x-4">
                             <div className="text-indigo-700 text-2xl"><FaShieldAlt /></div>
@@ -77,7 +77,7 @@ export const BringToLife = () => {
 
                     {/* CTA Section */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-12 space-y-4 sm:space-y-0">
-                        <button className="bg-[#ff5823] text-white font-semibold px-6 py-3 shadow hover:bg-[#e64a17] transition">
+                        <button className="bg-[#ff5823] text-white cursor-pointer font-semibold px-6 py-3 shadow hover:bg-[#e64a17] transition">
                             {t("bringToLife.bookBtn")}
                         </button>
                         <a

@@ -32,7 +32,7 @@ export const Slider = () => {
                         🔧 {t("slider.subTitle")}
                     </div>
                     <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                        <span className="text-yellow-400">
+                        <span className="text-[#ffc752]">
                             {t("slider.title")}
                         </span>
                         <br/>

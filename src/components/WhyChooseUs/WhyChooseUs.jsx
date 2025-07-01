@@ -5,7 +5,7 @@ export default function WhyChooseUs() {
     const { t } = useTranslation();
 
     return (
-        <section className="bg-[#f4f2fd] py-16 relative overflow-hidden">
+        <section className="py-16 relative overflow-hidden">
             <div className="container mx-auto px-6 relative flex flex-col md:flex-row items-center gap-10">
                 {/* Картинка */}
                 <div className="w-full md:w-1/2 relative z-0">
@@ -19,7 +19,7 @@ export default function WhyChooseUs() {
                 {/* Контент: перекрытие на десктопе */}
                 <div className="w-full md:w-1/2 bg-white p-4 md:p-6 space-y-6 relative z-10 -mt-10 md:mt-0 md:-ml-40">
                     <div>
-                        <span className="bg-yellow-400 text-black font-semibold text-sm px-3 py-2 rounded">
+                        <span className="bg-[#ffc752] text-black font-semibold text-sm px-3 py-2 rounded">
                             {t('why_choose_us')}
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold mt-6 text-gray-900">

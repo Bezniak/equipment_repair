@@ -7,6 +7,7 @@ import {NavbarComponent} from "./components/Navbar/Navbar.jsx";
 import {About} from "./components/Abot/About.jsx";
 import {Serveses} from "./components/Serveses/Serveses.jsx";
 import {Contacts} from "./components/Contacts/Contacts.jsx";
+import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy.jsx";
 
 
 const Layout = () => {
@@ -48,6 +49,10 @@ const App = () => {
                 {
                     path: ROUTES.CONTACT,
                     element: <Contacts/>
+                },
+                {
+                    path: ROUTES.PP,
+                    element: <PrivacyPolicy/>
                 },
             ]
         },

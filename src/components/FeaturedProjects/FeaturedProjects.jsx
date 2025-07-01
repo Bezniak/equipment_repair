@@ -14,7 +14,7 @@ export default function FeaturedProjects() {
         <section className="bg-white py-20">
             <div className="container mx-auto px-6 text-center">
                 {/* Section Tag */}
-                <span className="bg-yellow-400 text-black font-semibold text-sm px-4 py-3 rounded">
+                <span className="bg-[#ffc752] text-black font-semibold text-sm px-4 py-3 rounded">
                     {t('featured_projects')}
                 </span>
 
@@ -42,7 +42,7 @@ export default function FeaturedProjects() {
                             />
                             {/* Overlay label */}
                             <div
-                                className="absolute bottom-0 left-0 right-0 bg-yellow-400 bg-opacity-90 text-black text-center py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                className="absolute bottom-0 left-0 right-0 bg-[#ffc752] bg-opacity-90 text-black text-center py-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                 {project.label}
                             </div>
                         </div>

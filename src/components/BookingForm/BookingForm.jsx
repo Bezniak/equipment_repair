@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useMemo, useState} from 'react';
 import {Controller, useForm} from 'react-hook-form';
 import Select from 'react-select';
 import axios from 'axios';
@@ -16,7 +16,7 @@ registerLocale('ru', ru);
 
 const phonePattern = /^(\+375|80)(29|25|44|33)\d{7}$/;
 
-const BookingForm = () => {
+const BookingForm = ({bg}) => {
     const {t} = useTranslation();
     const {locale} = useAuth();
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -87,8 +87,14 @@ const BookingForm = () => {
         );
     }
 
+    const backgroundStyle = useMemo(() => ({backgroundColor: bg || '#0c0c1f'}), [bg]);
+
+
     return (
-        <div className="bg-[#0c0c1f] p-5 rounded shadow-md w-full max-w-md mt-10 md:mt-0 text-white">
+        <div
+            style={backgroundStyle}
+            className="p-9 w-full max-w-lg mt-10 md:mt-0 text-white"
+        >
             <h2 className="text-2xl text-center font-bold mb-2">{t('form.title') || 'Request Your Services'}</h2>
             <p className="text-center py-3">{t("form.desc")}</p>
 
@@ -186,14 +192,15 @@ const BookingForm = () => {
                 <button
                     type="submit"
                     disabled={!isValid || isSubmitting}
-                    className={`w-full font-bold py-2 rounded mt-2 ${
+                    className={`w-full font-bold py-2 rounded transition mt-2 ${
                         !isValid || isSubmitting
                             ? 'bg-gray-400 cursor-not-allowed'
-                            : 'bg-orange-600 hover:bg-orange-700 text-white'
+                            : 'bg-orange-600 hover:bg-orange-700 text-white cursor-pointer'
                     }`}
                 >
                     {isSubmitting ? t("form.sending", 'Sending...') : t("form.scheduleBooking", 'Schedule Booking')}
                 </button>
+
             </form>
         </div>
     );
