@@ -1,19 +1,34 @@
 {
+  "bookBtn": "Book Now",
+  "developed_by": "Developed by",
+  "rightsReserved": "All rights reserved.",
+  "ivan_bezniak": "Ivan Bezniak",
   "navbar": {
     "home": "Home",
-    "about": "About",
+    "about": "About Us",
+    "aboutDesc": "Discover the passion and expertise behind our journey in home appliance care",
     "services": "Services",
+    "bookTitle": "Book a Service",
+    "bookDesc": "Fill out the form and we’ll get back to you shortly",
+    "serviceDesc": "From quick fixes to complete repairs — we handle everything with care",
     "contact": "Contact",
-    "leaveRequest": "Book"
+    "contDesc": "Get in touch today and let us help you with your appliance issues.",
+    "privacyPolicy": "Privacy Policy",
+    "leaveRequest": "Leave a Request"
   },
-
+  "slider": {
+    "subTitle": "We repair — you enjoy.",
+    "title": "Appliance broken?",
+    "additionTitle": "We’ve got the solution.",
+    "desc": "Our certified technicians are committed to delivering top-notch appliance services with transparent pricing and satisfaction guaranteed."
+  },
   "equipment": {
     "washingMachine": "Washing Machine",
     "refrigerator": "Refrigerator",
     "oven": "Oven",
     "dishwasher": "Dishwasher",
-    "microwave": "Microwave Oven",
-    "dryer": "Clothes Dryer",
+    "microwave": "Microwave",
+    "dryer": "Dryer",
     "airConditioner": "Air Conditioner",
     "electricKettle": "Electric Kettle",
     "vacuumCleaner": "Vacuum Cleaner",
@@ -26,9 +41,9 @@
     "electricStove": "Electric Stove",
     "gasStove": "Gas Stove",
     "extractorHood": "Extractor Hood",
-    "thermopot": "Thermopot",
+    "thermopot": "Thermo Pot",
     "juicer": "Juicer",
-    "steamCooker": "Steamer",
+    "steamCooker": "Steam Cooker",
     "multicooker": "Multicooker",
     "iron": "Iron",
     "hairDryer": "Hair Dryer",
@@ -49,6 +64,217 @@
     "smokeDetector": "Smoke Detector",
     "humidifier": "Humidifier",
     "massageChair": "Massage Chair"
+  },
+  "form": {
+    "title": "Request a Repair",
+    "desc": "Schedule appliance repairs online – available 24/7",
+    "namePlaceholder": "Your name",
+    "nameRequired": "Name is required",
+    "phonePlaceholder": "Phone number",
+    "phoneRequired": "Phone number is required",
+    "phoneInvalid": "Please enter a valid Belarusian phone number",
+    "addressPlaceholder": "Address",
+    "addressRequired": "Address is required",
+    "selectDate": "Select a date",
+    "dateRequired": "Date is required",
+    "applianceRequired": "Please select at least one appliance",
+    "selectAppliancePlaceholder": "Choose appliance types...",
+    "sending": "Sending...",
+    "scheduleBooking": "Schedule Now",
+    "thankYouTitle": "Thank you!",
+    "thankYouMessage": "Your request has been submitted successfully. We’ll contact you shortly.",
+    "sendAnother": "Submit another request"
+  },
+  "bringToLife": {
+    "title": "We Bring Your Appliances Back to Life",
+    "desc": "Don’t let a broken appliance disrupt your life. RBT-SERWIS offers comprehensive repair solutions for all major brands and models. With transparent pricing, easy online booking, and a satisfaction guarantee, you can rest assured your appliance is in good hands.",
+    "warrantyTitle": "Repair Warranty",
+    "warrantyDesc": "We provide a warranty for all our repairs so you can feel confident.",
+    "availabilityTitle": "24/7 Availability",
+    "availabilityDesc": "We accept service requests around the clock to fix your appliances when you need it.",
+    "qualityTitle": "Quality Parts & Service",
+    "qualityDesc": "We use only genuine parts and back our repairs with a warranty.",
+    "bookingTitle": "Convenient Booking",
+    "bookingDesc": "Book online 24/7.",
+    "bookBtn": "Book a Repair",
+    "phone": "+375 33 36 00 854"
+  },
+  "ourServices": {
+    "ourServices": "Our Services",
+    "title": "Comprehensive Appliance Repair Services",
+    "desc": "We provide a full range of repair services for all major household appliances. Whether your fridge is leaking, your oven isn’t heating, or your washing machine is making strange noises — we’ve got the fix.",
+    "types": "We repair all major appliance models",
+    "fridgeRepair": {
+      "title": "Refrigerator Repair",
+      "desc": "We diagnose and fix cooling issues, leaks, strange noises, and more to keep your food fresh and safe.",
+      "img": "/Refrigerator.png"
+    },
+    "ovenRepair": {
+      "title": "Washing Machine Repair",
+      "desc": "From leaks and drainage issues to spin cycle problems — we’ll get your laundry routine back on track.",
+      "img": "/Laundry.png"
+    },
+    "washerRepair": {
+      "title": "Coffee Machine Repair",
+      "desc": "We fix brewing issues, leaks, and grinding malfunctions to deliver your perfect cup of coffee.",
+      "img": "/Coffee-Machine.png"
+    },
+    "dryerRepair": {
+      "title": "TV Repair",
+      "desc": "Our technicians resolve display, sound, and connection problems to restore your perfect viewing experience.",
+      "img": "/TV.png"
+    },
+    "dishwasherRepair": {
+      "title": "Air Purifier Repair",
+      "desc": "We restore clean air circulation by fixing filter problems, sensor failures, and more.",
+      "img": "/Air-purifier.png"
+    },
+    "microwaveRepair": {
+      "title": "Microwave Repair",
+      "desc": "We repair the power unit, turntable, and other components to restore microwave heating.",
+      "img": "/Microwave.png"
+    },
+    "kettleRepair": {
+      "title": "Sewing Machine Repair",
+      "desc": "We fix thread tension, motor issues, and other malfunctions to get your sewing machine running smoothly again.",
+      "img": "/Sewing.png"
+    },
+    "acRepair": {
+      "title": "Dishwasher Repair",
+      "desc": "We fix leaks, cleaning issues, and strange noises so your dishes come out sparkling every time.",
+      "img": "/Dishwasher.png"
+    },
+    "riceRepair": {
+      "title": "Rice Cooker Repair",
+      "desc": "To ensure perfect rice every time, we inspect the heating element, timer, and fix any potential issues.",
+      "img": "/Ricecooker.png"
+    },
+    "vacuumRepair": {
+      "title": "Vacuum Cleaner Repair",
+      "desc": "Our experts fix suction problems, brush issues, and other malfunctions to restore full cleaning power.",
+      "img": "/Vacuum-cleaner.png"
+    },
+    "toasterRepair": {
+      "title": "Toaster Repair",
+      "desc": "We resolve heating problems, uneven toasting, and jammed mechanisms so you get perfectly toasted bread every time.",
+      "img": "/Toaster.png"
+    },
+    "blenderRepair": {
+      "title": "Blender Repair",
+      "desc": "We fix leaks in the blades, motor, and lid to ensure your smoothies and soups blend smoothly and evenly.",
+      "img": "/Blender.png"
+    }
+  },
+  "hero": {
+    "title": "Reliable and Experienced Appliance Repair Team",
+    "subtitle": "Professional appliance repairs at fair prices. Fast diagnostics, quality service, and parts for all major brands. Guaranteed work and transparent terms — no hidden fees."
+  },
+  "features": {
+    "certified": "Certified Technicians",
+    "certifiedDesc": "Our specialists can diagnose and repair any household appliance.",
+    "local": "Trusted Over Time",
+    "localDesc": "Hundreds of satisfied customers trust us for our professionalism, punctuality, and honest service.",
+    "pricing": "Transparent Pricing",
+    "pricingDesc": "No hidden fees. We provide an accurate estimate before any work begins.",
+    "prompt": "Prompt Service",
+    "promptDesc": "We value your time and offer same-day or next-day repairs."
+  },
+  "why_choose_us": "Why Choose Us?",
+  "we_bring_appliances_back": "We Bring Your Appliances Back to Life",
+  "we_provide_comprehensive_repair": "Don’t let a faulty appliance disrupt your routine. RBS-SERWIS provides comprehensive repairs for all major brands and models. Transparent pricing, convenient online booking, and a satisfaction guarantee — your appliances are in good hands.",
+  "guaranteed_warranties": "Guaranteed Quality",
+  "warranties_description": "Every repair comes with an official warranty — so you know exactly what you’re paying for and what to expect.",
+  "service_24_7": "24/7 Service Requests",
+  "service_24_7_description": "Submit a request anytime — we’ll contact you during the next available work window and resolve the issue quickly.",
+  "convenient_booking": "Book Online in a Minute",
+  "convenient_booking_description": "Fill out a short form on our website or choose a convenient callback time — no long waits or complicated steps.",
+  "quality_parts": "Original Parts and Precise Repairs",
+  "quality_parts_description": "We use only genuine parts and strictly follow manufacturer standards — your appliance will work like new.",
+  "repairman_alt": "Technician repairing a household appliance",
+  "featured_projects": "Featured Projects",
+  "featured_showcase": "Our Project Showcase",
+  "featured_description": "Discover how Applicare helps thousands of families with appliance repairs. Browse our recent projects to see the quality and professionalism behind our services.",
+  "book_service": "Book a Service",
+  "view_all_projects": "View All Projects",
+  "Repairing coffee machine": "Coffee Machine Repair",
+  "Oven repair": "Oven Repair",
+  "Fridge repair": "Fridge Repair",
+  "Washing machine repair": "Washing Machine Repair",
+  "oven_stove_success": "Successful Oven Repair",
+  "microwave_repair": "Microwave Repair",
+  "refrigerator_maintenance": "Refrigerator Maintenance",
+  "washing_machine_fix": "Washing Machine Fix",
+  "oneCall": "One Call Solves It All:",
+  "weAre": "We’re Your All-in-One Appliance Repair Solution",
+  "ben1": "Satisfaction guaranteed with every repair.",
+  "ben2": "Affordable and transparent pricing.",
+  "ben3": "Certified and experienced technicians.",
+  "consult": "Consult an Expert",
+  "contactInfo": "Contact Information",
+  "address": "Kosmonavtov Ave. 2A, Grodno",
+  "businessHours": "Business Hours",
+  "workingHours1": "Mon – Fri: 8:00 AM – 7:30 PM",
+  "workingHours2": "Saturday: 8:00 AM – 1:30 PM",
+  "closed": "Sunday: Closed",
+  "information": "Information",
+  "pp": {
+    "general_provisions": "1. General Provisions",
+    "this_privacy_policy": "This Privacy Policy (hereinafter referred to as the 'Policy') governs the collection, use, storage, and disclosure of information provided by users of web applications and services.",
+    "committed_to_maintaining": "RBS-SERWIS is committed to ensuring the confidentiality and protection of personal data in compliance with applicable laws, including the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and other international standards.",
+    "collection_use_data": "2. Data Collection and Use",
+    "company_may_collect": "We may collect the following types of data:",
+    "provided_voluntarily": "Personal data: Name, email address, phone number, and other data voluntarily provided by the user through forms.",
+    "technical_data": "Technical data: IP address, device type, browser data, operating system, and website behavior.",
+    "cookie": "Cookies: To enhance the user experience and analyze application performance.",
+    "data_collected": "Data is collected for the following purposes:",
+    "provision_of_services": "Providing services and user support.",
+    "improving_the_quality": "Improving the quality of web applications and services.",
+    "marketing_activities": "Marketing activities with user consent.",
+    "data_storage": "3. Data Storage",
+    "stores_personal": "We store personal data only for the time necessary to fulfill the purposes of its processing and in accordance with the user's country's legislation. After achieving the purposes, the data is deleted or anonymized.",
+    "disclosure_data": "4. Data Disclosure to Third Parties",
+    "does_not_transfer_data": "The company does not transfer personal data to third parties, except in the following cases:",
+    "user_consent": "With the user's consent.",
+    "comply_legal_requirements": "To comply with legal requirements.",
+    "engaging_service_providers": "When engaging third-party service providers (e.g., hosting, analytics) who are obligated to maintain data confidentiality.",
+    "data_transfer_countries": "In case of data transfer to other countries, we ensure compliance with international privacy standards.",
+    "user_rights": "5. User Rights",
+    "depending_on_laws": "Depending on the legislation of their country of residence, users may have the following rights:",
+    "request_access": "Request access to their data.",
+    "request_correction": "Request correction or deletion of data.",
+    "restrict_data": "Restrict data processing.",
+    "withdraw_consent": "Withdraw consent for data processing.",
+    "exercise_rights": "To exercise their rights, users may contact us using the details provided on the website.",
+    "data_protection": "6. Data Protection",
+    "company_takes_measures": "We take technical and organizational measures to ensure data security, including:",
+    "using_encryption": "Using encryption.",
+    "restricting_access": "Restricting access to data to authorized employees only.",
+    "regular_updates": "Regular software updates.",
+    "changes_policy": "7. Changes to the Policy",
+    "company_reserves_right": "We reserve the right to amend this Policy. Updates are published on the Company's official website. Users are encouraged to periodically check for changes.",
+    "international_aspects": "8. International Aspects",
+    "company_operates": "We operate in accordance with international privacy standards and process data in compliance with the laws of the countries where users are located. For cross-border data transfers, mechanisms ensuring data protection, such as Standard Contractual Clauses, are used.",
+    "conclusion": "9. Conclusion",
+    "have_any_questions": "If you have any questions or inquiries related to this Policy, you can contact us using the details provided on the website."
+  },
+  "home": {
+    "title": "Appliance Repair in Grodno",
+    "description": "Professional repair of refrigerators, washing machines, microwaves, and other household appliances in Grodno.",
+    "keywords": "appliance repair Grodno, appliance repair, refrigerator repair, washing machine repair, microwave repair"
+  },
+  "about": {
+    "title": "About RBT-SERWIS — Appliance Repair in Grodno",
+    "description": "Learn more about our company, professional team, and high-quality appliance repair services.",
+    "keywords": "about RBT-SERWIS, appliance repair, service, Grodno appliance repair"
+  },
+  "contacts": {
+    "title": "Contacts — Appliance Repair in Grodno",
+    "description": "Contact us for professional appliance repair in Grodno. Address, phone, working hours, and booking form.",
+    "keywords": "contacts, appliance repair, Grodno, phone, address"
+  },
+  "services": {
+    "title": "Services — Appliance Repair in Grodno",
+    "description": "We offer comprehensive appliance repair services: refrigerators, washing machines, microwaves, and more.",
+    "keywords": "repair, services, appliances, refrigerators, washing machines, microwaves"
   }
-
 }

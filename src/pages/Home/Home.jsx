@@ -6,10 +6,12 @@ import ApplianceRepairSection from "../../components/ApplianceRepairSection/Appl
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs.jsx";
 import FeaturedProjects from "../../components/FeaturedProjects/FeaturedProjects.jsx";
 import {Conclusion} from "../../components/Conclusion/Conclusion.jsx";
+import MetaTags from "../../common/MetaTags.jsx";
 
 const Home = () => {
     return (
         <>
+            <MetaTags page="home" canonicalUrl="https://yourdomain.com/" />
             <main>
                 <Slider/>
                 <BringToLife/>

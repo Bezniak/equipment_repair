@@ -4,10 +4,11 @@ import {ROUTES} from "./config/routes.js";
 import Home from "./pages/Home/Home.jsx";
 import NotFound from "./components/NotFound/NotFound.jsx";
 import {NavbarComponent} from "./components/Navbar/Navbar.jsx";
-import {About} from "./components/Abot/About.jsx";
-import {Serveses} from "./components/Serveses/Serveses.jsx";
-import {Contacts} from "./components/Contacts/Contacts.jsx";
+import {About} from "./pages/About/About.jsx";
+import {Serveses} from "./pages/Serveses/Serveses.jsx";
+import {Contacts} from "./pages/Contacts/Contacts.jsx";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy.jsx";
+import {BookPage} from "./components/BookPage/BookPage.jsx";
 
 
 const Layout = () => {
@@ -53,6 +54,10 @@ const App = () => {
                 {
                     path: ROUTES.PP,
                     element: <PrivacyPolicy/>
+                },
+                {
+                    path: ROUTES.BOOK,
+                    element: <BookPage/>
                 },
             ]
         },
