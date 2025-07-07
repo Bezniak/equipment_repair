@@ -1,10 +1,7 @@
-import React, { useEffect, useRef } from 'react';
-import { useTranslation } from 'react-i18next';
-import { FaCalendarAlt, FaCogs, FaPhoneAlt, FaShieldAlt, FaUsers } from 'react-icons/fa';
-import { NavLink } from "react-router-dom";
-import { ROUTES } from "../../config/routes.js";
-import { handleClick } from "../../common/helpers.js";
-import { motion, useAnimation } from "framer-motion";
+import React, {useEffect, useRef} from 'react';
+import {useTranslation} from 'react-i18next';
+import {FaCogs, FaPhoneAlt, FaShieldAlt, FaStopwatch} from 'react-icons/fa';
+import {motion, useAnimation} from "framer-motion";
 
 function useOnScreen(ref) {
     const [isIntersecting, setIntersecting] = React.useState(false);
@@ -12,7 +9,7 @@ function useOnScreen(ref) {
     React.useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => setIntersecting(entry.isIntersecting),
-            { threshold: 0.3 }
+            {threshold: 0.3}
         );
         if (ref.current) observer.observe(ref.current);
         return () => {
@@ -24,11 +21,11 @@ function useOnScreen(ref) {
 }
 
 const itemVariants = {
-    hidden: { opacity: 0, x: 50 },
+    hidden: {opacity: 0, x: 50},
     visible: {
         opacity: 1,
         x: 0,
-        transition: { duration: 0.6, ease: "easeOut" }
+        transition: {duration: 0.6, ease: "easeOut"}
     }
 };
 
@@ -42,7 +39,7 @@ const containerVariants = {
 };
 
 export const BringToLife = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
     const ref = useRef(null);
     const isVisible = useOnScreen(ref);
     const controls = useAnimation();
@@ -80,35 +77,37 @@ export const BringToLife = () => {
                             className="rounded-lg shadow-md"
                             loading="lazy"
                         />
-                        <figcaption className="sr-only">{t("bringToLife.imgCaption") || "Ремонт бытовой техники"}</figcaption>
+                        <figcaption
+                            className="sr-only">{t("bringToLife.imgCaption") || "Ремонт бытовой техники"}</figcaption>
                     </figure>
                 </motion.article>
 
                 {/* Правый контент — преимущества */}
-                <motion.aside className="rounded-xl p-8 bg-gray-50" variants={itemVariants} aria-label={t("bringToLife.featuresAria") || "Преимущества ремонта"}>
+                <motion.aside className="rounded-xl p-8 bg-gray-50" variants={itemVariants}
+                              aria-label={t("bringToLife.featuresAria") || "Преимущества ремонта"}>
                     <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10" variants={containerVariants}>
                         {[
                             {
-                                icon: <FaShieldAlt className="text-indigo-700 text-2xl" aria-hidden="true" />,
+                                icon: <FaShieldAlt className="text-indigo-700 text-2xl" aria-hidden="true"/>,
                                 title: t("bringToLife.warrantyTitle"),
                                 desc: t("bringToLife.warrantyDesc")
                             },
                             {
-                                icon: <FaUsers className="text-indigo-700 text-2xl" aria-hidden="true" />,
+                                icon: <FaPhoneAlt className="text-indigo-700 text-2xl" aria-hidden="true"/>,
                                 title: t("bringToLife.availabilityTitle"),
                                 desc: t("bringToLife.availabilityDesc")
                             },
                             {
-                                icon: <FaCogs className="text-indigo-700 text-2xl" aria-hidden="true" />,
+                                icon: <FaCogs className="text-indigo-700 text-2xl" aria-hidden="true"/>,
                                 title: t("bringToLife.qualityTitle"),
                                 desc: t("bringToLife.qualityDesc")
                             },
                             {
-                                icon: <FaCalendarAlt className="text-indigo-700 text-2xl" aria-hidden="true" />,
+                                icon: <FaStopwatch className="text-indigo-700 text-2xl" aria-hidden="true"/>,
                                 title: t("bringToLife.bookingTitle"),
                                 desc: t("bringToLife.bookingDesc")
                             }
-                        ].map(({ icon, title, desc }, idx) => (
+                        ].map(({icon, title, desc}, idx) => (
                             <motion.article key={idx} className="flex items-start space-x-4" variants={itemVariants}>
                                 <div aria-hidden="true">{icon}</div>
                                 <div>
@@ -125,22 +124,6 @@ export const BringToLife = () => {
                         variants={itemVariants}
                         aria-label={t("bringToLife.ctaAria") || "Контакты и бронирование"}
                     >
-                        <NavLink
-                            to={ROUTES.BOOK}
-                            onClick={handleClick}
-                            className="bg-[#ff5823] text-white cursor-pointer font-semibold px-6 py-3 shadow rounded hover:bg-[#e64a17] transition"
-                            aria-label={t("bringToLife.bookBtnAria") || "Перейти к форме бронирования"}
-                        >
-                            {t("bringToLife.bookBtn")}
-                        </NavLink>
-                        <a
-                            href={`tel:${t("bringToLife.phone").replace(/\s+/g, '')}`}
-                            className="flex items-center text-gray-900 font-semibold text-lg space-x-2 hover:text-[#ff5823] transition"
-                            aria-label={t("bringToLife.phoneAria") || `Позвонить по телефону ${t("bringToLife.phone")}`}
-                        >
-                            <FaPhoneAlt className="text-[#ff5823]" aria-hidden="true" />
-                            <span>{t("bringToLife.phone")}</span>
-                        </a>
                     </motion.nav>
                 </motion.aside>
             </div>

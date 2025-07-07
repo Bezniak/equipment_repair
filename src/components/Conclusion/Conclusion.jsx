@@ -10,14 +10,14 @@ export const Conclusion = () => {
         <section
             aria-label={t("conclusion_section")}
             className="relative md:h-screen bg-fixed bg-center bg-cover flex flex-col items-center justify-center text-white text-center px-4"
-            style={{ backgroundImage: "url('/conclusion.jpg')" }}
+            style={{ backgroundImage: "url('/conclusionBG.png')" }}
         >
             {/* Overlay */}
             <div className="absolute inset-0 bg-gray-900/70 z-0" />
 
             {/* Main content container */}
             <div
-                className="container mx-auto relative z-10 w-full px-4 py-12 md:py-16 flex flex-col md:flex-row justify-evenly items-center gap-12"
+                className="container relative z-10 w-full px-4 py-12 md:py-16 flex justify-end"
             >
                 {/* Left Side */}
                 <div className="md:w-1/2 space-y-6 text-left">
@@ -53,7 +53,7 @@ export const Conclusion = () => {
                         </div>
                     </a>
                 </div>
-                <BookingForm bg="#3536a5" />
+                {/*<BookingForm bg="#3536a5" />*/}
             </div>
         </section>
     );

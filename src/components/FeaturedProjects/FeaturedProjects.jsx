@@ -10,8 +10,8 @@ export default function FeaturedProjects() {
         {
             id: 1,
             image: '/project1.jpg',
-            alt: t("ourServices.washerRepair.title"),
-            label: t("ourServices.washerRepair.title"),
+            alt: t("ourServices.coffeeMachineRepair.title"),
+            label: t("ourServices.coffeeMachineRepair.title"),
         },
         {
             id: 2,
@@ -22,14 +22,14 @@ export default function FeaturedProjects() {
         {
             id: 3,
             image: '/project3.jpg',
-            alt: t("ourServices.fridgeRepair.title"),
-            label: t("ourServices.fridgeRepair.title"),
+            alt: t("ourServices.vacuumRepair.title"),
+            label: t("ourServices.vacuumRepair.title"),
         },
         {
             id: 4,
             image: '/project4.jpg',
-            alt: t("ourServices.ovenRepair.title"),
-            label: t("ourServices.ovenRepair.title"),
+            alt: t("ourServices.toasterRepair.title"),
+            label: t("ourServices.toasterRepair.title"),
         },
     ];
 

@@ -1,6 +1,10 @@
 {
   "bookBtn": "Book Now",
-  "developed_by": "Developed by",
+  "more": "Learn More",
+  "showMore": "Show more",
+  "companyName": "Rembyttekhnika",
+  "repairDetails": "Main Types of Repair:",
+  "developed_by": "App developed by",
   "rightsReserved": "All rights reserved.",
   "ivan_bezniak": "Ivan Bezniak",
   "navbar": {
@@ -23,13 +27,7 @@
     "desc": "Our certified technicians are committed to delivering top-notch appliance services with transparent pricing and satisfaction guaranteed."
   },
   "equipment": {
-    "washingMachine": "Washing Machine",
-    "refrigerator": "Refrigerator",
-    "oven": "Oven",
-    "dishwasher": "Dishwasher",
     "microwave": "Microwave",
-    "dryer": "Dryer",
-    "airConditioner": "Air Conditioner",
     "electricKettle": "Electric Kettle",
     "vacuumCleaner": "Vacuum Cleaner",
     "coffeeMachine": "Coffee Machine",
@@ -39,9 +37,8 @@
     "breadMaker": "Bread Maker",
     "waterHeater": "Water Heater",
     "electricStove": "Electric Stove",
-    "gasStove": "Gas Stove",
     "extractorHood": "Extractor Hood",
-    "thermopot": "Thermo Pot",
+    "thermopot": "Thermopot",
     "juicer": "Juicer",
     "steamCooker": "Steam Cooker",
     "multicooker": "Multicooker",
@@ -54,16 +51,10 @@
     "robotVacuum": "Robot Vacuum",
     "electricGrill": "Electric Grill",
     "foodProcessor": "Food Processor",
-    "freezer": "Freezer",
-    "gasWaterHeater": "Gas Water Heater",
-    "fireplaceStove": "Fireplace Stove",
     "tv": "TV",
     "audioSystem": "Audio System",
-    "washerDryer": "Washer-Dryer",
-    "builtInAppliances": "Built-in Appliances",
     "smokeDetector": "Smoke Detector",
-    "humidifier": "Humidifier",
-    "massageChair": "Massage Chair"
+    "humidifier": "Humidifier"
   },
   "form": {
     "title": "Request a Repair",
@@ -86,83 +77,388 @@
     "sendAnother": "Submit another request"
   },
   "bringToLife": {
-    "title": "We Bring Your Appliances Back to Life",
-    "desc": "Don’t let a broken appliance disrupt your life. RBT-SERWIS offers comprehensive repair solutions for all major brands and models. With transparent pricing, easy online booking, and a satisfaction guarantee, you can rest assured your appliance is in good hands.",
+    "title": "We’ll Bring Your Appliances Back to Life",
+    "desc": "Don’t let a broken appliance disrupt your daily routine. Rembyttehnika offers comprehensive repair solutions for all major models. Transparent pricing, attentive service, and quality assurance — your appliances are in safe hands.",
     "warrantyTitle": "Repair Warranty",
-    "warrantyDesc": "We provide a warranty for all our repairs so you can feel confident.",
-    "availabilityTitle": "24/7 Availability",
-    "availabilityDesc": "We accept service requests around the clock to fix your appliances when you need it.",
-    "qualityTitle": "Quality Parts & Service",
-    "qualityDesc": "We use only genuine parts and back our repairs with a warranty.",
-    "bookingTitle": "Convenient Booking",
-    "bookingDesc": "Book online 24/7.",
+    "warrantyDesc": "We offer a warranty on all our repairs so you can feel confident.",
+    "availabilityTitle": "Always Available",
+    "availabilityDesc": "You can contact us during working hours — we’re always ready to help.",
+    "qualityTitle": "High-Quality Parts and Work",
+    "qualityDesc": "We use only original parts and provide a warranty on repairs.",
+    "bookingTitle": "No Long Waits",
+    "bookingDesc": "Visit our workshop — we’ll accept your appliance without long lines.",
     "bookBtn": "Book a Repair",
     "phone": "+375 33 36 00 854"
   },
   "ourServices": {
     "ourServices": "Our Services",
-    "title": "Comprehensive Appliance Repair Services",
-    "desc": "We provide a full range of repair services for all major household appliances. Whether your fridge is leaking, your oven isn’t heating, or your washing machine is making strange noises — we’ve got the fix.",
-    "types": "We repair all major appliance models",
-    "fridgeRepair": {
-      "title": "Refrigerator Repair",
-      "desc": "We diagnose and fix cooling issues, leaks, strange noises, and more to keep your food fresh and safe.",
-      "img": "/Refrigerator.png"
-    },
-    "ovenRepair": {
-      "title": "Washing Machine Repair",
-      "desc": "From leaks and drainage issues to spin cycle problems — we’ll get your laundry routine back on track.",
-      "img": "/Laundry.png"
-    },
-    "washerRepair": {
+    "title": "Comprehensive Household Appliance Repair Services",
+    "desc": "We offer a full range of repair services for all major household appliances. If your coffee machine stops brewing delicious coffee or your microwave no longer heats food, our specialists will quickly find a solution and bring your appliance back to life.",
+    "types": "We repair all major household appliance models",
+    "coffeeMachineRepair": {
       "title": "Coffee Machine Repair",
-      "desc": "We fix brewing issues, leaks, and grinding malfunctions to deliver your perfect cup of coffee.",
-      "img": "/Coffee-Machine.png"
+      "desc": "We diagnose and fix brewing issues, leaks, and grinding problems.",
+      "img": "/Coffee-Machine.png",
+      "services": [
+        "Cleaning and repairing the brewing unit",
+        "Replacing seals and valves",
+        "Repairing and replacing the pump",
+        "Cleaning the milk supply system and cappuccinator",
+        "Replacing the heating element (TEN)",
+        "Diagnosing and replacing control boards"
+      ]
     },
-    "dryerRepair": {
+    "tvRepair": {
       "title": "TV Repair",
-      "desc": "Our technicians resolve display, sound, and connection problems to restore your perfect viewing experience.",
-      "img": "/TV.png"
+      "desc": "We fix issues with image, sound, and connectivity.",
+      "img": "/TV.png",
+      "services": [
+        "Power board repair",
+        "Replacing the matrix (screen)",
+        "Repairing and replacing backlighting",
+        "Restoring HDMI, USB, and other ports",
+        "Replacing capacitors and board components",
+        "Firmware and software updates"
+      ]
     },
-    "dishwasherRepair": {
+    "airPurifierRepair": {
       "title": "Air Purifier Repair",
-      "desc": "We restore clean air circulation by fixing filter problems, sensor failures, and more.",
-      "img": "/Air-purifier.png"
+      "desc": "We ensure full restoration of air filtration.",
+      "img": "/Air-purifier.png",
+      "services": [
+        "Replacing and cleaning HEPA filters",
+        "Repairing fans and motors",
+        "Calibrating air quality sensors",
+        "Repairing control panels",
+        "Cleaning internal ducts and air intakes"
+      ]
     },
     "microwaveRepair": {
-      "title": "Microwave Repair",
-      "desc": "We repair the power unit, turntable, and other components to restore microwave heating.",
-      "img": "/Microwave.png"
+      "title": "Microwave Oven Repair",
+      "desc": "We resolve heating and safety issues.",
+      "img": "/Microwave.png",
+      "services": [
+        "Replacing the magnetron",
+        "Repairing power supply and transformer",
+        "Replacing mica plates and diodes",
+        "Repairing door locks and mechanisms",
+        "Checking and replacing fuses",
+        "Cleaning and maintenance"
+      ]
     },
-    "kettleRepair": {
+    "sewingMachineRepair": {
       "title": "Sewing Machine Repair",
-      "desc": "We fix thread tension, motor issues, and other malfunctions to get your sewing machine running smoothly again.",
-      "img": "/Sewing.png"
-    },
-    "acRepair": {
-      "title": "Dishwasher Repair",
-      "desc": "We fix leaks, cleaning issues, and strange noises so your dishes come out sparkling every time.",
-      "img": "/Dishwasher.png"
+      "desc": "We ensure smooth and stable operation of your sewing machine.",
+      "img": "/Sewing.png",
+      "services": [
+        "Adjusting thread tension",
+        "Replacing motor and belt",
+        "Repairing shuttle and bobbin mechanism",
+        "Cleaning and lubricating internal parts",
+        "Configuring program control",
+        "Fixing jams and mechanical failures"
+      ]
     },
     "riceRepair": {
       "title": "Rice Cooker Repair",
-      "desc": "To ensure perfect rice every time, we inspect the heating element, timer, and fix any potential issues.",
-      "img": "/Ricecooker.png"
+      "desc": "We ensure perfect rice cooking without interruptions.",
+      "img": "/Ricecooker.png",
+      "services": [
+        "Checking and replacing heating elements",
+        "Repairing thermosensors",
+        "Replacing timer and control board",
+        "Repairing body and inner bowl",
+        "Cleaning steam valves and seals"
+      ]
     },
     "vacuumRepair": {
       "title": "Vacuum Cleaner Repair",
-      "desc": "Our experts fix suction problems, brush issues, and other malfunctions to restore full cleaning power.",
-      "img": "/Vacuum-cleaner.png"
+      "desc": "We restore cleaning power and efficiency.",
+      "img": "/Vacuum-cleaner.png",
+      "services": [
+        "Cleaning and replacing filters",
+        "Repairing and replacing motor",
+        "Restoring turbine",
+        "Repairing body and wheels",
+        "Cleaning brushes and attachments",
+        "Repairing power cord and switches"
+      ]
     },
     "toasterRepair": {
       "title": "Toaster Repair",
-      "desc": "We resolve heating problems, uneven toasting, and jammed mechanisms so you get perfectly toasted bread every time.",
-      "img": "/Toaster.png"
+      "desc": "We guarantee even and safe bread toasting.",
+      "img": "/Toaster.png",
+      "services": [
+        "Replacing heating elements",
+        "Repairing toast lifting mechanism",
+        "Cleaning internal compartments",
+        "Repairing thermostat and sensors",
+        "Replacing body and control buttons"
+      ]
     },
     "blenderRepair": {
       "title": "Blender Repair",
-      "desc": "We fix leaks in the blades, motor, and lid to ensure your smoothies and soups blend smoothly and evenly.",
-      "img": "/Blender.png"
+      "desc": "We ensure stable operation during chopping and mixing.",
+      "img": "/Blender.png",
+      "services": [
+        "Replacing or sharpening blades",
+        "Repairing motor and bearings",
+        "Replacing lid and gaskets",
+        "Fixing leaks from the bowl",
+        "Checking electronics and switches"
+      ]
+    },
+    "meatGrinderRepair": {
+      "title": "Meat Grinder Repair",
+      "desc": "We restore cutting ability and safety of household meat grinders.",
+      "img": "/Meat-grinder.png",
+      "services": [
+        "Replacing blades and grids",
+        "Repairing gearbox and auger",
+        "Cleaning and lubricating internal parts",
+        "Repairing motor and drive",
+        "Fixing overheating and short circuits"
+      ]
+    },
+    "breadMakerRepair": {
+      "title": "Bread Maker Repair",
+      "desc": "We ensure stable operation and even baking.",
+      "img": "",
+      "services": [
+        "Replacing heating element and temperature sensors",
+        "Repairing motor and kneading mechanism",
+        "Updating control panel",
+        "Cleaning internal surfaces",
+        "Checking electronic components"
+      ]
+    },
+    "waterHeaterRepair": {
+      "title": "Water Heater Repair",
+      "desc": "We guarantee safe and reliable water heating.",
+      "img": "",
+      "services": [
+        "Replacing heating elements",
+        "Cleaning tank from scale",
+        "Repairing thermostat and control board",
+        "Checking safety valves",
+        "Fixing leaks"
+      ]
+    },
+    "electricStoveRepair": {
+      "title": "Electric Stove Repair",
+      "desc": "We solve any heating and control problems.",
+      "img": "",
+      "services": [
+        "Replacing burners and heaters",
+        "Repairing control panel and switches",
+        "Replacing cables and thermocouples",
+        "Diagnosing and repairing boards",
+        "Restoring insulation and housing"
+      ]
+    },
+    "extractorHoodRepair": {
+      "title": "Kitchen Hood Repair",
+      "desc": "We restore hood efficiency and filtration.",
+      "img": "",
+      "services": [
+        "Replacing filters and fan",
+        "Repairing electric drive",
+        "Cleaning air ducts and impeller",
+        "Repairing lighting",
+        "Replacing control panel"
+      ]
+    },
+    "thermopotRepair": {
+      "title": "Thermopot Repair",
+      "desc": "We ensure uninterrupted boiling and temperature maintenance.",
+      "img": "",
+      "services": [
+        "Replacing heating elements",
+        "Repairing pump and dispenser",
+        "Repairing thermostat and buttons",
+        "Cleaning internal container",
+        "Checking electronic systems"
+      ]
+    },
+    "juicerRepair": {
+      "title": "Juicer Repair",
+      "desc": "We restore performance and safety of juice extraction.",
+      "img": "",
+      "services": [
+        "Replacing filters and screens",
+        "Repairing motor and gearbox",
+        "Cleaning and lubricating moving parts",
+        "Replacing buttons and electronics",
+        "Checking insulation and fuses"
+      ]
+    },
+    "steamCookerRepair": {
+      "title": "Steamer Repair",
+      "desc": "We guarantee proper steaming.",
+      "img": "",
+      "services": [
+        "Repairing heating element",
+        "Cleaning reservoir and steam pipe",
+        "Replacing thermosensors",
+        "Checking buttons and indicators",
+        "Repairing body and trays"
+      ]
+    },
+    "multicookerRepair": {
+      "title": "Multicooker Repair",
+      "desc": "We bring your multicooker back to life for delicious meals.",
+      "img": "",
+      "services": [
+        "Replacing heating element and thermosensors",
+        "Repairing control board",
+        "Checking valves and gaskets",
+        "Repairing housing and lid",
+        "Firmware updates"
+      ]
+    },
+    "ironRepair": {
+      "title": "Iron Repair",
+      "desc": "We repair heating and steam issues.",
+      "img": "",
+      "services": [
+        "Replacing heating element",
+        "Repairing steam generator",
+        "Removing scale buildup",
+        "Replacing power cord",
+        "Checking buttons and thermostat"
+      ]
+    },
+    "hairDryerRepair": {
+      "title": "Hair Dryer Repair",
+      "desc": "We ensure stable hot air supply and safe usage.",
+      "img": "",
+      "services": [
+        "Repairing heating element",
+        "Replacing fan",
+        "Repairing mode switches",
+        "Cleaning dust and hair",
+        "Checking and replacing power cord"
+      ]
+    },
+    "electricShaverRepair": {
+      "title": "Electric Shaver Repair",
+      "desc": "We restore shaving precision and uninterrupted operation.",
+      "img": "",
+      "services": [
+        "Replacing blades and foil",
+        "Repairing battery and charger",
+        "Cleaning internal mechanisms",
+        "Checking buttons and housing",
+        "Repairing vibration motor"
+      ]
+    },
+    "heaterRepair": {
+      "title": "Heater Repair",
+      "desc": "We guarantee reliable heating and device safety.",
+      "img": "",
+      "services": [
+        "Replacing heating element",
+        "Repairing thermostat",
+        "Checking power cable",
+        "Cleaning ventilation openings",
+        "Repairing housing and legs"
+      ]
+    },
+    "fanRepair": {
+      "title": "Fan Repair",
+      "desc": "We restore even and quiet fan rotation.",
+      "img": "",
+      "services": [
+        "Repairing electric motor",
+        "Replacing blades",
+        "Cleaning dust",
+        "Checking and replacing cable",
+        "Repairing speed switches"
+      ]
+    },
+    "robotVacuumRepair": {
+      "title": "Robot Vacuum Repair",
+      "desc": "We bring your robot back to full functionality and autonomy.",
+      "img": "",
+      "services": [
+        "Replacing battery",
+        "Repairing sensors and navigation",
+        "Cleaning and replacing brushes",
+        "Repairing wheels and drive",
+        "Firmware updates"
+      ]
+    },
+    "electricGrillRepair": {
+      "title": "Electric Grill Repair",
+      "desc": "We guarantee even heating and cooking convenience.",
+      "img": "",
+      "services": [
+        "Replacing heating plates",
+        "Repairing thermostat and control panel",
+        "Cleaning grease and dirt",
+        "Checking electronics",
+        "Replacing power cable"
+      ]
+    },
+    "foodProcessorRepair": {
+      "title": "Food Processor Repair",
+      "desc": "We restore functionality and power of your kitchen appliance.",
+      "img": "",
+      "services": [
+        "Replacing attachments and cutting elements",
+        "Repairing motor",
+        "Replacing lid and bowl",
+        "Repairing speed switches",
+        "Cleaning internal components"
+      ]
+    },
+    "audioSystemRepair": {
+      "title": "Audio System Repair",
+      "desc": "We bring back clear and powerful sound to your audio equipment.",
+      "img": "",
+      "services": [
+        "Repairing amplifier and speakers",
+        "Replacing audio jacks",
+        "Repairing remote control",
+        "Updating software",
+        "Checking and replacing power supply"
+      ]
+    },
+    "smokeDetectorRepair": {
+      "title": "Smoke Detector Repair",
+      "desc": "We ensure accurate and timely alarm signaling.",
+      "img": "",
+      "services": [
+        "Replacing batteries and sensors",
+        "Checking sound signals",
+        "Repairing indication system",
+        "Cleaning dust",
+        "Testing alarm triggers"
+      ]
+    },
+    "humidifierRepair": {
+      "title": "Humidifier Repair",
+      "desc": "We restore air humidification and cleanliness.",
+      "img": "",
+      "services": [
+        "Cleaning and disinfecting tank",
+        "Repairing ultrasonic module",
+        "Replacing filters",
+        "Repairing control panel",
+        "Checking fan and sensors"
+      ]
+    },
+    "massageChairRepair": {
+      "title": "Massage Chair Repair",
+      "desc": "We guarantee comfort and restoration of massage functions.",
+      "img": "",
+      "services": [
+        "Repairing massage rollers and mechanisms",
+        "Replacing remote control",
+        "Repairing motors and drives",
+        "Checking electronics and power supplies",
+        "Updating software"
+      ]
     }
   },
   "hero": {
@@ -181,19 +477,19 @@
   },
   "why_choose_us": "Why Choose Us?",
   "we_bring_appliances_back": "We Bring Your Appliances Back to Life",
-  "we_provide_comprehensive_repair": "Don’t let a faulty appliance disrupt your routine. RBS-SERWIS provides comprehensive repairs for all major brands and models. Transparent pricing, convenient online booking, and a satisfaction guarantee — your appliances are in good hands.",
-  "guaranteed_warranties": "Guaranteed Quality",
-  "warranties_description": "Every repair comes with an official warranty — so you know exactly what you’re paying for and what to expect.",
-  "service_24_7": "24/7 Service Requests",
-  "service_24_7_description": "Submit a request anytime — we’ll contact you during the next available work window and resolve the issue quickly.",
-  "convenient_booking": "Book Online in a Minute",
-  "convenient_booking_description": "Fill out a short form on our website or choose a convenient callback time — no long waits or complicated steps.",
-  "quality_parts": "Original Parts and Precise Repairs",
-  "quality_parts_description": "We use only genuine parts and strictly follow manufacturer standards — your appliance will work like new.",
+  "we_provide_comprehensive_repair": "Don't let broken appliances disrupt your daily routine. Rembytekhnika offers comprehensive repair services for all major brands and models. Transparent pricing, convenient online booking, and a satisfaction guarantee — so you can have peace of mind about your appliances.",
+  "guaranteed_warranties": "Quality Guarantee",
+  "warranties_description": "Every repair comes with an official warranty — you know exactly what you're paying for and what you'll receive.",
+  "service_24_7": "Fast Diagnostics and Accurate Results",
+  "service_24_7_description": "Our specialists quickly diagnose issues and accurately identify the cause — no guesswork or unnecessary expenses.",
+  "convenient_booking": "Support at Every Stage",
+  "convenient_booking_description": "We're in touch throughout the entire repair process — from your first inquiry to when your appliance is fully operational. No need to worry.",
+  "quality_parts": "Genuine Parts and Precision Repair",
+  "quality_parts_description": "We use only branded components and strictly follow manufacturer standards — your device works like new.",
   "repairman_alt": "Technician repairing a household appliance",
   "featured_projects": "Featured Projects",
   "featured_showcase": "Our Project Showcase",
-  "featured_description": "Discover how Applicare helps thousands of families with appliance repairs. Browse our recent projects to see the quality and professionalism behind our services.",
+  "featured_description": "Discover how Rembyttekhnika helps thousands of families with appliance repairs. Browse our recent projects to see the quality and professionalism that set our services apart.",
   "book_service": "Book a Service",
   "view_all_projects": "View All Projects",
   "Repairing coffee machine": "Coffee Machine Repair",
@@ -220,7 +516,7 @@
   "pp": {
     "general_provisions": "1. General Provisions",
     "this_privacy_policy": "This Privacy Policy (hereinafter referred to as the 'Policy') governs the collection, use, storage, and disclosure of information provided by users of web applications and services.",
-    "committed_to_maintaining": "RBS-SERWIS is committed to ensuring the confidentiality and protection of personal data in compliance with applicable laws, including the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and other international standards.",
+    "committed_to_maintaining": "Rembyttekhnika is committed to ensuring the confidentiality and protection of personal data in compliance with applicable laws, including the General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA), and other international standards.",
     "collection_use_data": "2. Data Collection and Use",
     "company_may_collect": "We may collect the following types of data:",
     "provided_voluntarily": "Personal data: Name, email address, phone number, and other data voluntarily provided by the user through forms.",
@@ -263,9 +559,9 @@
     "keywords": "appliance repair Grodno, appliance repair, refrigerator repair, washing machine repair, microwave repair"
   },
   "about": {
-    "title": "About RBT-SERWIS — Appliance Repair in Grodno",
-    "description": "Learn more about our company, professional team, and high-quality appliance repair services.",
-    "keywords": "about RBT-SERWIS, appliance repair, service, Grodno appliance repair"
+    "title": "About Rembyttehnika — Appliance Repair in Grodno",
+    "description": "Learn more about our company, our professional team, and the high-quality services we offer for home appliance repairs.",
+    "keywords": "about Rembyttehnika, appliance repair, service, Grodno appliance service"
   },
   "contacts": {
     "title": "Contacts — Appliance Repair in Grodno",

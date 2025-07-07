@@ -26,7 +26,7 @@ export function NavbarComponent() {
         label: (
             <div className="flex items-center gap-2">
                 <img src={lang.flag} alt={lang.label} className="size-10" />
-                <span>{lang.label}</span>
+                <span className='hidden md:block'>{lang.label}</span>
             </div>
         ),
         flag: lang.flag,
@@ -74,20 +74,15 @@ export function NavbarComponent() {
     const isActive = (path) => location.pathname === path;
 
     return (
-        <Navbar fluid className="!bg-white fixed z-50 top-0 w-full border-b border-gray-300">
-            <NavbarBrand as={Link} to="/">
-                <img src="/logo.jpg" className="mr-3 h-18" alt="ремонт техники гродно"/>
+        <Navbar fluid className="!bg-white  fixed z-50 top-0 w-full border-b border-gray-300">
+            <NavbarBrand as={Link} to="/" className='flex items-center'>
+                <img src="/logo.svg" className="mr-3 h-18 inline-block" alt="ремонт техники гродно"/>
+                <span className='inline-block text-sm md:font-bold md:text-2xl md:ml-5'>
+                    {t("companyName")}
+                </span>
             </NavbarBrand>
 
             <div className="flex gap-4 md:order-2 items-center">
-                <NavLink
-                    to={ROUTES.BOOK}
-                    onClick={handleClick}
-                    className="hidden bg-[#ff5823] md:flex items-center text-white font-semibold px-4 py-3 cursor-pointer shadow hover:bg-[#e64a17] transition"
-                >
-                    {t("bookBtn")}
-                </NavLink>
-
                 {/* Выпадающий список языков */}
                 <Select
                     value={selectedOption}

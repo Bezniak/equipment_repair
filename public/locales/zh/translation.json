@@ -1,5 +1,9 @@
 {
-  "bookBtn": "预订",
+  "bookBtn": "立即预约",
+  "more": "了解更多",
+  "showMore": "显示更多",
+  "companyName": "家电维修服务",
+  "repairDetails": "主要维修类型：",
   "developed_by": "应用开发者",
   "rightsReserved": "版权所有。",
   "ivan_bezniak": "伊万·别兹尼亚克",
@@ -23,13 +27,7 @@
     "desc": "我们的认证专家致力于提供一流的家电服务，价格透明，满意保障。"
   },
   "equipment": {
-    "washingMachine": "洗衣机",
-    "refrigerator": "冰箱",
-    "oven": "烤箱",
-    "dishwasher": "洗碗机",
     "microwave": "微波炉",
-    "dryer": "干衣机",
-    "airConditioner": "空调",
     "electricKettle": "电热水壶",
     "vacuumCleaner": "吸尘器",
     "coffeeMachine": "咖啡机",
@@ -39,31 +37,24 @@
     "breadMaker": "面包机",
     "waterHeater": "热水器",
     "electricStove": "电炉",
-    "gasStove": "燃气灶",
     "extractorHood": "抽油烟机",
-    "thermopot": "保温壶",
+    "thermopot": "热水瓶",
     "juicer": "榨汁机",
-    "steamCooker": "蒸锅",
+    "steamCooker": "蒸汽锅",
     "multicooker": "多功能锅",
-    "iron": "熨斗",
+    "iron": "电熨斗",
     "hairDryer": "吹风机",
     "electricShaver": "电动剃须刀",
     "airPurifier": "空气净化器",
-    "heater": "暖气",
-    "fan": "风扇",
-    "robotVacuum": "机器人吸尘器",
-    "electricGrill": "电烧烤炉",
+    "heater": "取暖器",
+    "fan": "电风扇",
+    "robotVacuum": "扫地机器人",
+    "electricGrill": "电烤炉",
     "foodProcessor": "食品加工机",
-    "freezer": "冰柜",
-    "gasWaterHeater": "燃气热水器",
-    "fireplaceStove": "壁炉炉",
-    "tv": "电视",
+    "tv": "电视机",
     "audioSystem": "音响系统",
-    "washerDryer": "洗干一体机",
-    "builtInAppliances": "嵌入式家电",
     "smokeDetector": "烟雾探测器",
-    "humidifier": "加湿器",
-    "massageChair": "按摩椅"
+    "humidifier": "加湿器"
   },
   "form": {
     "title": "提交维修申请",
@@ -86,83 +77,388 @@
     "sendAnother": "再发送一个请求"
   },
   "bringToLife": {
-    "title": "我们让您的家电焕发生机",
-    "desc": "别让故障的家电影响您的生活。RBT-SERWIS为所有主要品牌和型号提供全面维修解决方案。我们提供透明的价格、便捷的在线预约和满意保障，让您安心将家电交给我们。",
+    "title": "让您的家电重获新生",
+    "desc": "不要让故障的家电打乱您的日常生活。Rembyttehnika 提供针对所有主流型号的综合维修方案。价格透明，服务周到，质量有保障 — 您的家电将在我们手中恢复如新。",
     "warrantyTitle": "维修保修",
-    "warrantyDesc": "我们为所有维修提供保修，让您更安心。",
-    "availabilityTitle": "全天候服务",
-    "availabilityDesc": "我们全天接受请求，确保您的家电及时维修。",
-    "qualityTitle": "优质零件和服务",
-    "qualityDesc": "我们仅使用原装零件，并提供维修保修。",
-    "bookingTitle": "便捷预约",
-    "bookingDesc": "24/7在线预约。",
+    "warrantyDesc": "我们为所有维修项目提供保修，让您安心无忧。",
+    "availabilityTitle": "随时联系",
+    "availabilityDesc": "在工作时间内您随时可以联系我们 — 我们始终准备为您服务。",
+    "qualityTitle": "优质零件与专业维修",
+    "qualityDesc": "我们只使用原厂零件，并对维修质量提供保障。",
+    "bookingTitle": "无需长时间等待",
+    "bookingDesc": "欢迎到我们的维修点 — 无需排长队，我们会立即接收您的设备。",
     "bookBtn": "预约维修",
     "phone": "+375 33 36 00 854"
   },
   "ourServices": {
     "ourServices": "我们的服务",
-    "title": "全面的家电维修服务",
-    "desc": "我们提供所有主要家用电器的全方位维修服务。如果您的冰箱漏水，烤箱不加热，或洗衣机发出异常声音，我们都有解决方案。",
-    "types": "我们维修所有主要型号的家电",
-    "fridgeRepair": {
-      "title": "冰箱维修",
-      "desc": "我们诊断并解决制冷问题、漏水、异响等，确保您的食物保持新鲜安全。",
-      "img": "/Refrigerator.png"
-    },
-    "ovenRepair": {
-      "title": "洗衣机维修",
-      "desc": "从漏水、排水问题到脱水故障——我们让您的洗衣恢复正常。",
-      "img": "/Laundry.png"
-    },
-    "washerRepair": {
+    "title": "家用电器综合维修服务",
+    "desc": "我们提供所有主要家用电器的全方位维修服务。如果您的咖啡机停止冲泡美味咖啡，或者微波炉不再加热食物，我们的专家将迅速找到解决方案，让您的电器恢复正常。",
+    "types": "我们维修所有主要型号的家用电器",
+    "coffeeMachineRepair": {
       "title": "咖啡机维修",
-      "desc": "我们诊断并解决冲泡、漏水和研磨问题，帮您享受完美咖啡。",
-      "img": "/Coffee-Machine.png"
+      "desc": "诊断并解决冲泡问题、漏水和研磨故障。",
+      "img": "/Coffee-Machine.png",
+      "services": [
+        "清洁和维修冲泡单元",
+        "更换密封件和阀门",
+        "维修和更换水泵",
+        "清洁牛奶供给系统和奶泡器",
+        "更换加热元件（TEN）",
+        "诊断和更换控制板"
+      ]
     },
-    "dryerRepair": {
+    "tvRepair": {
       "title": "电视维修",
-      "desc": "我们的专家解决显示、声音及连接问题，让您的电视画面完美无瑕。",
-      "img": "/TV.png"
+      "desc": "解决图像、声音和连接问题。",
+      "img": "/TV.png",
+      "services": [
+        "电源板维修",
+        "更换液晶屏（矩阵）",
+        "维修和更换背光灯",
+        "修复HDMI、USB及其他接口",
+        "更换电容器和电路板元件",
+        "固件和软件更新"
+      ]
     },
-    "dishwasherRepair": {
+    "airPurifierRepair": {
       "title": "空气净化器维修",
-      "desc": "我们修复过滤器故障、传感器问题等，恢复您家的清新空气循环。",
-      "img": "/Air-purifier.png"
+      "desc": "确保空气过滤功能完全恢复。",
+      "img": "/Air-purifier.png",
+      "services": [
+        "更换和清洁HEPA滤网",
+        "维修风扇和电机",
+        "校准空气质量传感器",
+        "维修控制面板",
+        "清洁内部通道和进气口"
+      ]
     },
     "microwaveRepair": {
       "title": "微波炉维修",
-      "desc": "为恢复微波加热功能，我们维修电源、转盘及其他组件。",
-      "img": "/Microwave.png"
+      "desc": "解决加热和安全问题。",
+      "img": "/Microwave.png",
+      "services": [
+        "更换磁控管",
+        "维修电源和变压器",
+        "更换云母板和二极管",
+        "维修门锁和机械装置",
+        "检查和更换保险丝",
+        "清洁和维护"
+      ]
     },
-    "kettleRepair": {
+    "sewingMachineRepair": {
       "title": "缝纫机维修",
-      "desc": "我们解决穿线、马达等故障，让缝纫机恢复顺畅缝纫。",
-      "img": "/Sewing.png"
-    },
-    "acRepair": {
-      "title": "洗碗机维修",
-      "desc": "我们排除漏水、清洗问题和异常噪音，确保您的餐具洁净如新。",
-      "img": "/Dishwasher.png"
+      "desc": "确保您的缝纫机运行平稳稳定。",
+      "img": "/Sewing.png",
+      "services": [
+        "调整线张力",
+        "更换电机和皮带",
+        "维修梭芯和梭芯机构",
+        "清洁和润滑内部部件",
+        "设置程序控制",
+        "解决卡顿和机械故障"
+      ]
     },
     "riceRepair": {
       "title": "电饭煲维修",
-      "desc": "为了确保完美烹饪，我们检查加热元件、定时器及潜在故障。",
-      "img": "/Ricecooker.png"
+      "desc": "确保米饭完美烹饪，无中断。",
+      "img": "/Ricecooker.png",
+      "services": [
+        "检查和更换加热元件",
+        "维修温度传感器",
+        "更换定时器和控制板",
+        "维修机身和内胆",
+        "清洁蒸汽阀和密封件"
+      ]
     },
     "vacuumRepair": {
       "title": "吸尘器维修",
-      "desc": "我们的专家排除吸力、刷头等故障，恢复强劲清洁能力。",
-      "img": "/Vacuum-cleaner.png"
+      "desc": "恢复清洁能力和效率。",
+      "img": "/Vacuum-cleaner.png",
+      "services": [
+        "清洁和更换过滤器",
+        "维修和更换电机",
+        "恢复涡轮",
+        "维修机身和轮子",
+        "清洁刷子和附件",
+        "维修电源线和开关"
+      ]
     },
     "toasterRepair": {
       "title": "烤面包机维修",
-      "desc": "我们解决加热不均、卡顿等问题，让您每次都能享用完美烤面包。",
-      "img": "/Toaster.png"
+      "desc": "保证面包均匀且安全地烤制。",
+      "img": "/Toaster.png",
+      "services": [
+        "更换加热元件",
+        "维修吐司升降机制",
+        "清洁内部隔层",
+        "维修恒温器和传感器",
+        "更换机壳和控制按钮"
+      ]
     },
     "blenderRepair": {
       "title": "搅拌机维修",
-      "desc": "我们解决刀片、马达和盖子漏水问题，确保您的奶昔和汤品均匀混合。",
-      "img": "/Blender.png"
+      "desc": "保证切碎和混合时的稳定运行。",
+      "img": "/Blender.png",
+      "services": [
+        "更换或磨刀片",
+        "维修电机和轴承",
+        "更换盖子和密封圈",
+        "解决杯体漏水",
+        "检查电子元件和开关"
+      ]
+    },
+    "meatGrinderRepair": {
+      "title": "绞肉机维修",
+      "desc": "恢复家用绞肉机的切割能力和安全性。",
+      "img": "/Meat-grinder.png",
+      "services": [
+        "更换刀片和筛网",
+        "维修减速器和螺旋杆",
+        "清洁和润滑内部部件",
+        "维修电机和驱动装置",
+        "解决过热和短路问题"
+      ]
+    },
+    "breadMakerRepair": {
+      "title": "面包机维修",
+      "desc": "确保稳定运行和均匀烘烤。",
+      "img": "",
+      "services": [
+        "更换加热元件和温度传感器",
+        "维修电机和揉面机构",
+        "更新控制面板",
+        "清洁内部表面",
+        "检查电子元件"
+      ]
+    },
+    "waterHeaterRepair": {
+      "title": "热水器维修",
+      "desc": "保证安全可靠的水加热。",
+      "img": "",
+      "services": [
+        "更换加热元件",
+        "清除水垢",
+        "维修恒温器和控制板",
+        "检查安全阀",
+        "修复漏水"
+      ]
+    },
+    "electricStoveRepair": {
+      "title": "电炉维修",
+      "desc": "解决所有加热和控制问题。",
+      "img": "",
+      "services": [
+        "更换炉盘和加热器",
+        "维修控制面板和开关",
+        "更换电缆和热电偶",
+        "诊断和维修电路板",
+        "恢复绝缘和机壳"
+      ]
+    },
+    "extractorHoodRepair": {
+      "title": "抽油烟机维修",
+      "desc": "恢复抽油烟机的效率和过滤功能。",
+      "img": "",
+      "services": [
+        "更换滤网和风扇",
+        "维修电动驱动装置",
+        "清洁风道和叶轮",
+        "维修照明装置",
+        "更换控制面板"
+      ]
+    },
+    "thermopotRepair": {
+      "title": "热水瓶维修",
+      "desc": "保证持续沸腾和水温维持。",
+      "img": "",
+      "services": [
+        "更换加热元件",
+        "维修水泵和分配器",
+        "维修恒温器和按钮",
+        "清洁内部容器",
+        "检查电子系统"
+      ]
+    },
+    "juicerRepair": {
+      "title": "榨汁机维修",
+      "desc": "恢复榨汁机的性能和安全性。",
+      "img": "",
+      "services": [
+        "更换滤网和筛网",
+        "维修电机和减速器",
+        "清洁和润滑活动部件",
+        "更换按钮和电子元件",
+        "检查绝缘和保险丝"
+      ]
+    },
+    "steamCookerRepair": {
+      "title": "蒸锅维修",
+      "desc": "保证正确的蒸汽烹饪。",
+      "img": "",
+      "services": [
+        "维修加热元件",
+        "清洁水箱和蒸汽管",
+        "更换温度传感器",
+        "检查按钮和指示灯",
+        "维修机壳和托盘"
+      ]
+    },
+    "multicookerRepair": {
+      "title": "多功能锅维修",
+      "desc": "让您的多功能锅恢复生机，烹制美味佳肴。",
+      "img": "",
+      "services": [
+        "更换加热元件和温度传感器",
+        "维修控制板",
+        "检查阀门和密封件",
+        "维修机壳和盖子",
+        "固件更新"
+      ]
+    },
+    "ironRepair": {
+      "title": "熨斗维修",
+      "desc": "修复加热和蒸汽问题。",
+      "img": "",
+      "services": [
+        "更换加热元件",
+        "维修蒸汽发生器",
+        "除垢",
+        "更换电源线",
+        "检查按钮和恒温器"
+      ]
+    },
+    "hairDryerRepair": {
+      "title": "吹风机维修",
+      "desc": "保证热风稳定供应和安全使用。",
+      "img": "",
+      "services": [
+        "维修加热元件",
+        "更换风扇",
+        "维修模式开关",
+        "清洁灰尘和头发",
+        "检查和更换电源线"
+      ]
+    },
+    "electricShaverRepair": {
+      "title": "电动剃须刀维修",
+      "desc": "恢复剃须精度和连续工作。",
+      "img": "",
+      "services": [
+        "更换刀片和网罩",
+        "维修电池和充电器",
+        "清洁内部机械",
+        "检查按钮和机壳",
+        "维修振动马达"
+      ]
+    },
+    "heaterRepair": {
+      "title": "加热器维修",
+      "desc": "保证可靠加热和设备安全。",
+      "img": "",
+      "services": [
+        "更换加热元件",
+        "维修恒温器",
+        "检查电源线",
+        "清洁通风口",
+        "维修机壳和脚架"
+      ]
+    },
+    "fanRepair": {
+      "title": "风扇维修",
+      "desc": "恢复风扇均匀且安静的旋转。",
+      "img": "",
+      "services": [
+        "维修电动机",
+        "更换叶片",
+        "清洁灰尘",
+        "检查和更换电缆",
+        "维修速度开关"
+      ]
+    },
+    "robotVacuumRepair": {
+      "title": "机器人吸尘器维修",
+      "desc": "让您的机器人恢复全部功能和自主性。",
+      "img": "",
+      "services": [
+        "更换电池",
+        "维修传感器和导航系统",
+        "清洁和更换刷子",
+        "维修轮子和驱动装置",
+        "固件更新"
+      ]
+    },
+    "electricGrillRepair": {
+      "title": "电烤架维修",
+      "desc": "保证均匀加热和烹饪便利。",
+      "img": "",
+      "services": [
+        "更换加热板",
+        "维修恒温器和控制面板",
+        "清洁油脂和污垢",
+        "检查电子元件",
+        "更换电源线"
+      ]
+    },
+    "foodProcessorRepair": {
+      "title": "食物处理机维修",
+      "desc": "恢复厨房电器的功能和动力。",
+      "img": "",
+      "services": [
+        "更换配件和切割部件",
+        "维修电机",
+        "更换盖子和碗",
+        "维修速度开关",
+        "清洁内部组件"
+      ]
+    },
+    "audioSystemRepair": {
+      "title": "音响系统维修",
+      "desc": "让您的音响设备恢复清晰有力的声音。",
+      "img": "",
+      "services": [
+        "维修放大器和扬声器",
+        "更换音频接口",
+        "维修遥控器",
+        "软件更新",
+        "检查和更换电源模块"
+      ]
+    },
+    "smokeDetectorRepair": {
+      "title": "烟雾探测器维修",
+      "desc": "确保准确及时的报警信号。",
+      "img": "",
+      "services": [
+        "更换电池和传感器",
+        "检查声音信号",
+        "维修指示系统",
+        "清洁灰尘",
+        "测试报警触发"
+      ]
+    },
+    "humidifierRepair": {
+      "title": "加湿器维修",
+      "desc": "恢复空气加湿和清洁功能。",
+      "img": "",
+      "services": [
+        "清洁和消毒水箱",
+        "维修超声波模块",
+        "更换滤网",
+        "维修控制面板",
+        "检查风扇和传感器"
+      ]
+    },
+    "massageChairRepair": {
+      "title": "按摩椅维修",
+      "desc": "保证按摩舒适性和功能恢复。",
+      "img": "",
+      "services": [
+        "维修按摩滚轮和机构",
+        "更换遥控器",
+        "维修电机和驱动装置",
+        "检查电子元件和电源模块",
+        "软件更新"
+      ]
     }
   },
   "hero": {
@@ -181,19 +477,19 @@
   },
   "why_choose_us": "为什么选择我们？",
   "we_bring_appliances_back": "我们让您的家电焕发生机",
-  "we_provide_comprehensive_repair": "别让故障家电打乱您的生活节奏。RBS-SERWIS 提供所有主要品牌和型号的全面维修服务。透明价格，便捷在线预约，满意保证——让您放心使用您的家电。",
+  "we_provide_comprehensive_repair": "别让故障的家电打乱您的生活节奏。Rembytekhnika 提供所有主要品牌和型号的全面维修服务。价格透明，方便的在线预约和满意保证——让您对家电安心无忧。",
   "guaranteed_warranties": "质量保证",
-  "warranties_description": "每次维修均附官方质保——您清楚知道所付费用及获得的服务。",
-  "service_24_7": "全天候接受预约",
-  "service_24_7_description": "随时在网站提交申请——我们将在最近的工作时间内联系您，迅速解决问题。",
-  "convenient_booking": "一分钟在线预约",
-  "convenient_booking_description": "填写网站简短表单或选择方便的通话时间——无需等待和复杂流程。",
-  "quality_parts": "原厂配件与精准维修",
-  "quality_parts_description": "我们只使用原厂配件，严格遵循制造商标准——让您的设备焕然如新。",
+  "warranties_description": "每项维修均附带官方保修 — 您清楚知道所支付的费用以及最终获得的服务。",
+  "service_24_7": "快速诊断，精准修复",
+  "service_24_7_description": "我们的专家迅速诊断并准确找出故障原因 — 没有多余开销和猜测。",
+  "convenient_booking": "全程支持",
+  "convenient_booking_description": "从首次联系到设备恢复正常运行，我们始终保持沟通 — 您无需为维修过程操心。",
+  "quality_parts": "原装配件，精确维修",
+  "quality_parts_description": "我们仅使用品牌原装配件，并严格遵循厂商标准 — 您的设备将焕然一新。",
   "repairman_alt": "维修师傅正在修理家电",
   "featured_projects": "精选项目",
   "featured_showcase": "我们的成功项目展示",
-  "featured_description": "了解 Applicare 如何帮助成千上万家庭维修家电。浏览我们的近期项目，见证品质与专业的差异。",
+  "featured_description": "了解家电维修服务如何帮助成千上万的家庭修理家电。浏览我们的最新项目，亲眼见证我们服务的质量与专业水平。",
   "book_service": "预约服务",
   "view_all_projects": "查看所有项目",
   "Repairing coffee machine": "咖啡机维修",
@@ -220,7 +516,7 @@
   "pp": {
     "general_provisions": "1. 一般条款",
     "this_privacy_policy": "本隐私政策（以下简称“政策”）规范了网站应用和服务用户提供的信息的收集、使用、存储和披露方式。",
-    "committed_to_maintaining": "RBT-SEDRWIS 承诺根据适用法律保护个人数据的隐私与安全，包括《通用数据保护条例》（GDPR）、加州消费者隐私法案（CCPA）及其他国际标准。",
+    "committed_to_maintaining": "Rembyttekhnika 承诺根据适用法律保护个人数据的隐私与安全，包括《通用数据保护条例》（GDPR）、加州消费者隐私法案（CCPA）及其他国际标准。",
     "collection_use_data": "2. 数据收集与使用",
     "company_may_collect": "我们可能收集以下类型的数据：",
     "provided_voluntarily": "个人信息：姓名、电子邮件地址、电话号码及用户通过表单自愿提供的其他信息。",
@@ -263,9 +559,9 @@
     "keywords": "格罗德诺家电维修, 家电维修, 冰箱维修, 洗衣机维修, 微波炉维修"
   },
   "about": {
-    "title": "关于 RBT-SERWIS — 格罗德诺家电维修",
-    "description": "了解更多关于我们公司、专业团队及高质量家电维修服务的信息。",
-    "keywords": "关于 RBT-SERWIS, 家电维修, 服务, 格罗德诺家电维修"
+    "title": "关于 Rembyttehnika — 格罗德诺家电维修",
+    "description": "了解我们公司、专业团队以及我们提供的高质量家电维修服务。",
+    "keywords": "关于 Rembyttehnika, 家电维修, 服务, 格罗德诺维修服务"
   },
   "contacts": {
     "title": "联系方式 — 格罗德诺家电维修",

@@ -1,11 +1,5 @@
 export const applianceData = [
-    {key: "washingMachine", value: "Стиральная машина"},
-    {key: "refrigerator", value: "Холодильник"},
-    {key: "oven", value: "Духовой шкаф"},
-    {key: "dishwasher", value: "Посудомоечная машина"},
     {key: "microwave", value: "Микроволновая печь"},
-    {key: "dryer", value: "Сушильная машина"},
-    {key: "airConditioner", value: "Кондиционер"},
     {key: "electricKettle", value: "Электрический чайник"},
     {key: "vacuumCleaner", value: "Пылесос"},
     {key: "coffeeMachine", value: "Кофемашина"},
@@ -15,7 +9,6 @@ export const applianceData = [
     {key: "breadMaker", value: "Хлебопечка"},
     {key: "waterHeater", value: "Водонагреватель"},
     {key: "electricStove", value: "Электроплита"},
-    {key: "gasStove", value: "Газовая плита"},
     {key: "extractorHood", value: "Вытяжка"},
     {key: "thermopot", value: "Термопот"},
     {key: "juicer", value: "Соковыжималка"},
@@ -30,13 +23,8 @@ export const applianceData = [
     {key: "robotVacuum", value: "Робот-пылесос"},
     {key: "electricGrill", value: "Электрогриль"},
     {key: "foodProcessor", value: "Кухонный комбайн"},
-    {key: "freezer", value: "Морозильник"},
-    {key: "gasWaterHeater", value: "Газовая колонка"},
-    {key: "fireplaceStove", value: "Печь-камин"},
     {key: "tv", value: "Телевизор"},
     {key: "audioSystem", value: "Аудиосистема"},
-    {key: "washerDryer", value: "Стирально-сушильная машина"},
-    {key: "builtInAppliances", value: "Встраиваемая техника"},
     {key: "smokeDetector", value: "Детектор дыма"},
     {key: "humidifier", value: "Увлажнитель воздуха"},
     {key: "massageChair", value: "Массажное кресло"}
@@ -45,7 +33,7 @@ export const applianceData = [
 export const brands = [
     {
         name: "Bosch",
-        logo: "/bosch.png", // замените на свои пути к картинкам
+        logo: "/bosch.png",
     },
     {
         name: "Samsung",

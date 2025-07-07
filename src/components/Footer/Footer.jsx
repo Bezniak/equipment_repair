@@ -211,7 +211,7 @@ export const Footer = () => {
                 </p>
 
                 <div className="text-left mt-10 md:mt-0">
-                    {year} RBT-SERWIS. &nbsp;{t("rightsReserved")}
+                    {year} {t("companyName")}. &nbsp;{t("rightsReserved")}
                 </div>
             </div>
         </footer>

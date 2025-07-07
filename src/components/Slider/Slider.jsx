@@ -55,13 +55,13 @@ export const Slider = () => {
             ref={ref}
             aria-label={t("slider.ariaLabel") || "Главный слайдер"}
             className="relative w-full md:h-screen overflow-hidden bg-cover bg-center"
-            style={{ backgroundImage: "url('/background.jpg')" }}
+            style={{ backgroundImage: "url('/bg.jpg')" }}
         >
             {/* Фоновая затемняющая подложка */}
             <div className="absolute inset-0 bg-black/60 z-0" aria-hidden="true" />
 
             <motion.div
-                className="container mx-auto py-44 relative z-20 flex flex-col md:flex-row items-center justify-between h-full px-5 md:px-16 text-white"
+                className="container mx-auto py-44 relative z-20 flex items-center justify-between h-full px-5 md:px-16 text-white"
                 initial={{ opacity: 0, y: 50 }}
                 animate={controls}
             >
@@ -91,15 +91,6 @@ export const Slider = () => {
 
                     {/* Кнопки с понятными названиями и aria-label */}
                     <nav aria-label={t("slider.actionsAriaLabel") || "Действия с бронированием"} className="mt-6 flex flex-col md:flex-row w-full items-center gap-4">
-                        <NavLink
-                            to={ROUTES.BOOK}
-                            onClick={handleClick}
-                            className="w-full md:w-64 bg-orange-600 cursor-pointer hover:bg-orange-700 transition text-white font-bold py-3 px-6 text-center rounded"
-                            aria-label={t("bookBtnAria") || "Перейти к форме бронирования"}
-                        >
-                            {t("bookBtn")}
-                        </NavLink>
-
                         <a
                             href="tel:+375333600854"
                             className="w-full md:w-64 bg-orange-600 hover:bg-orange-700 transition text-white font-bold py-3 px-6 text-center block rounded"
@@ -109,11 +100,6 @@ export const Slider = () => {
                         </a>
                     </nav>
                 </article>
-
-                {/* Форма бронирования */}
-                <aside aria-label={t("bookingFormAria") || "Форма бронирования"}>
-                    <BookingForm />
-                </aside>
             </motion.div>
         </section>
     );
